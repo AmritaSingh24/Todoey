@@ -1,0 +1,8 @@
+<svg width="0" height="0" class="hidden">
+  <symbol viewBox="0 0 194.6 185.1" id="Dropdwonicon">
+    <polygon fill="#A2A7AA" points="53.4,65.1 96.6,65.1 75,90.1 75,90.1">
+      <animate id="downup" begin="indefinite" fill="freeze" attributeName="points" dur="250ms" to="75,65.1 75,65.1 96.6,90.1 53.4,90.1"></animate>
+      <animate id="updown" begin="indefinite" fill="freeze" attributeName="points" dur="250ms" to="53.4,65.1 96.6,65.1 75,90.1 75,90.1"></animate>
+    </polygon>
+  </symbol>
+</svg>

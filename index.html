@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <meta property="og:image" content="Images/"> -->
+    <title>Todoey!</title>
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="CSS/normalize.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="CSS/Style.css">
+
+</head>
+<body>
+    <div class="container">
+        <!-- Block-Header -->
+        <header class="block__header">
+            <h1 class="header_brand">Todoey!</h1>
+            <button class="btn btn__primary" id="clearAll">Clear All</button>
+        </header>
+
+        <!-- Block-form -->
+        <section class="block__form">
+            <form id="taskform">
+                <div class="form-input">
+                    <label for="Task">Todo</label>
+                    <input id="task" type="text" class="input taskdetail" placeholder="Add Task" maxlength="100" name="Task">
+                    <p class="requiredInput1">Todo is required</p>
+                </div>
+                <div class="form-input">
+                    <label for="Priority">Priority</label>
+                    <select name="Priority" class="select taskdetail" id="priority">
+                      <option value>Select Priority</option>
+                      <option value="low">Low</option>
+                      <option value="medium">Medium</option>
+                      <option value="high">High</option>
+                    </select>
+                    <p class="requiredInput2">Todo is priority</p>
+                </div>
+                <button id="add" class="btn btn__primary btn--stretched">Add</button>
+            </form>
+        </section>
+
+        <!-- Filter-Button  -->
+        <section class="block block-filterBtn" id="blockFilter">
+            <div class="buttons">
+                <button class="btn btn__outline" id="filterBtn" data-type="all" active>All</button>
+                <button class="btn btn__outline" id="filterBtn" data-type="completed">Completed</button>
+                <button class="btn btn__outline" id="filterBtn" data-type="incompleted">Uncompleted</button>
+            </div> 
+        </section>
+
+        <!-- Block-Todo -->
+        <section class="block block__Todo" id="todo-details">
+            <!-- <ul class="Todo">
+                <li class="todo-list">
+                    <div class="todo-details">
+                        <p class="todo-task">JavaScript</p>
+                        <p class="todo-priority">Low</p>
+                    </div>
+                    <div class="todo-actions">
+                        <button class="btn__primary btn btn-round">
+                            <svg class="icon">
+                                <use xlink:href="Images/icon.svg#iconmonstr-check-mark-1"></use>
+                            </svg>
+                        </button>
+                        <button class="btn btn-round btn__primary">
+                            <svg class="icon">
+                                <use xlink:href="Images/icon.svg#iconmonstr-trash-can-24"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+            </ul> -->
+        </section>
+
+    </div>
+    <!-- JS file -->
+    <script src="JS/Todoey.js"></script>
+</body>
+</html>
